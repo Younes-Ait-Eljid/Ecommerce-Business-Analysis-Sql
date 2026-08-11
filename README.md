@@ -57,12 +57,12 @@ The project uses the Olist e-commerce dataset and works with the following relat
 |-|-|
 |`orders`|Order status, timestamps, delivery dates|
 |`customers`|Customer identity and geographic information|
-|`order\_items`|Products, sellers, prices, and freight|
+|`order_items`|Products, sellers, prices, and freight|
 |`products`|Product and category attributes|
 |`payments`|Payment methods, installments, and payment values|
 |`reviews`|Customer review scores and comments|
 |`sellers`|Seller identity and geographic information|
-|`category\_translation`|Portuguese-to-English category translation|
+|`category_translation`|Portuguese-to-English category translation|
 
 **Original dataset:** [Olist Brazilian E-Commerce Public Dataset — Kaggle](https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce/data?utm_source=chatgpt.com)
 
