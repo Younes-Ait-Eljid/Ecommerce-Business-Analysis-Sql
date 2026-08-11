@@ -37,13 +37,13 @@ Revenue is consistently defined as **revenue from delivered orders** in the busi
 ```text
 olist-sql-business-analysis/
 │
-├── 00\\\_dataset\\\_setup.sql
-├── 01\\\_data\\\_audit.sql
-├── 02\\\_data\\\_cleaning.sql
-├── 03\\\_exploratory\\\_data\\\_analysis.sql
-├── 04\\\_business\\\_analysis.sql
-├── 05\\\_business\\\_insights.md
-├── 06\\\_business\\\_recommendations.md
+├── 00_dataset_setup.sql
+├── 01_data_audit.sql
+├── 02_data_cleaning.sql
+├── 03_exploratory_data_analysis.sql
+├── 04_business_analysis.sql
+├── 05_business_insights.md
+├── 06_business_recommendations.md
 └── README.md
 ```
 
@@ -71,33 +71,33 @@ To reproduce the analysis:
 1. **Download the original dataset from the source**  
 Download the Olist dataset directly from the Kaggle page linked above.
 2. **Place the CSV files in the expected local directory**  
-Place all downloaded CSV files in the directory expected by `00\\\_dataset\\\_setup.sql`.  
+Place all downloaded CSV files in the directory expected by `00_dataset_setup.sql`.  
 Update the file paths in the setup script if necessary to match your local environment.
-3. **Run `00\\\_dataset\\\_setup.sql`**  
-This creates the `e\\\_commerce` database, defines the required tables, and loads the CSV files into MySQL.
+3. **Run `00_dataset_setup.sql`**  
+This creates the `e_commerce` database, defines the required tables, and loads the CSV files into MySQL.
 4. **Continue through the SQL scripts**  
 Execute the remaining scripts in order:
 
 ```text
-   01\\\_data\\\_audit.sql
-   02\\\_data\\\_cleaning.sql
-   03\\\_exploratory\\\_data\\\_analysis.sql
-   04\\\_business\\\_analysis.sql
+   01_data_audit.sql
+   02_data_cleaning.sql
+   03_exploratory_data_analysis.sql
+   04_business_analysis.sql
    ```
 
 5. **Review the final outputs**  
 After completing the analysis, review:
 
 ```text
-   05\\\_business\\\_insights.md
-   06\\\_business\\\_recommendations.md
+   05_business_insights.md
+   06_business_recommendations.md
    ```
 
 \---
 
 ### 00 — Dataset Setup
 
-Creates the `e\_commerce` database, defines the tables, and loads the Olist CSV datasets into MySQL.
+Creates the `e_commerce` database, defines the tables, and loads the Olist CSV datasets into MySQL.
 
 The setup creates eight tables covering customers, orders, order items, products, payments, reviews, sellers, and category translations.
 
